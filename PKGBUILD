@@ -56,7 +56,7 @@ package() {
 
   # install docs as per user request
   install -d "$pkgdir"/usr/share/doc/nodejs
-  cp -r doc/api/{*.html,assets} \
+  cp -r doc/api/*.markdown \
     "$pkgdir"/usr/share/doc/nodejs
 
   install -D -m644 LICENSE \
