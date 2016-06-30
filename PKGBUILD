@@ -1,4 +1,4 @@
-pkgname=nodejs-lts-argon
+pkgname=nodejs-lts
 pkgver=4.4.7
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript (LTS release: Argon)'
