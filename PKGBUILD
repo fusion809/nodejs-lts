@@ -1,5 +1,5 @@
 pkgname=nodejs-lts
-pkgver=4.4.7
+pkgver=4.5.0
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript (LTS release: Argon)'
 arch=('i686' 'x86_64')
@@ -11,7 +11,7 @@ optdepends=('npm: nodejs package manager')
 provides=('nodejs')
 conflicts=('nodejs')
 source=("https://github.com/nodejs/node/archive/v$pkgver.tar.gz")
-sha256sums=('8bb7731551fe920139951c7d670ea453502e08cf7dbe271365c9e3e6c78e2dd7')
+sha256sums=('eef72c6e48b0911fd79738ee36266009e47ddb4cff06227e18a6f004771f3cd1')
 
 prepare() {
   cd node-$pkgver
@@ -56,7 +56,7 @@ package() {
 
   # install docs as per user request
   install -d "$pkgdir"/usr/share/doc/nodejs
-  cp -r doc/api/*.markdown \
+  cp -r doc/api/*.md \
     "$pkgdir"/usr/share/doc/nodejs
 
   install -D -m644 LICENSE \
