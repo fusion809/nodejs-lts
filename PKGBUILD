@@ -1,5 +1,5 @@
 pkgname=nodejs-lts
-pkgver=4.6.1
+pkgver=6.9.1
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript (LTS release: Argon)'
 arch=('i686' 'x86_64')
@@ -9,9 +9,9 @@ depends=('openssl' 'zlib' 'icu') # 'libuv' 'v8' 'c-ares')
 makedepends=('python2' 'procps-ng')
 optdepends=('npm: nodejs package manager')
 provides=('nodejs')
-conflicts=('nodejs')
+conflicts=('nodejs' 'nodejs-lts-argon' 'nodejs-lts-boron')
 source=("https://github.com/nodejs/node/archive/v$pkgver.tar.gz")
-sha256sums=('9dd0cb2ff1cb001687c78c5ed7f3d32abeb1e03bb28dea4238a2a0226f7cf9c6')
+sha256sums=('eb272b097e279a623e99fa2c38f4a0df62e69ac8fcfa2925d8c7c68d724046cf')
 
 prepare() {
   cd node-$pkgver
