@@ -1,4 +1,5 @@
-pkgname=nodejs-lts
+# Maintainer: Brenton Horne <brentonhorne77@gmail.com>
+pkgname=nodejs-lts-boron
 pkgver=6.9.1
 pkgrel=1
 pkgdesc='Evented I/O for V8 javascript (LTS release: Argon)'
@@ -8,8 +9,8 @@ license=('MIT')
 depends=('openssl' 'zlib' 'icu') # 'libuv' 'v8' 'c-ares')
 makedepends=('python2' 'procps-ng')
 optdepends=('npm: nodejs package manager')
-provides=('nodejs')
-conflicts=('nodejs' 'nodejs-lts-argon' 'nodejs-lts-boron')
+provides=('nodejs' 'nodejs-lts-boron')
+conflicts=('nodejs' 'nodejs-lts-argon')
 source=("https://github.com/nodejs/node/archive/v$pkgver.tar.gz")
 sha256sums=('eb272b097e279a623e99fa2c38f4a0df62e69ac8fcfa2925d8c7c68d724046cf')
 
